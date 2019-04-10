@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bsvleste/backend.git",
+  "author": "Bruno de Souza Valeiro <bvaleiro85@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bcrypt": "^3.0.5",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev":"nodemon src/index.js"
+  }
+}
