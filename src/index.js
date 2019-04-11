@@ -11,7 +11,6 @@ const app = express();
 //abilita o socket io
 const server  = require('http').Server(app);
 const io = require('socket.io')(server);
-//define a porta para rodar o servidor
 const  porta = process.env.PORT || 3000;
 
 /* cria slara individuais para os arquivos */
