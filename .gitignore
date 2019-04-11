@@ -2,7 +2,8 @@
 
 # compiled output
 /dist
-/tmp
+/tmp/*
+!tmp/.gitkeep
 /out-tsc
 
 package-lock.json
