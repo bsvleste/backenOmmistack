@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post('/create',async(req,res)=>{
 
-    const box = await Box.create({title:"Fotos Carnaval"});
+    const box = await Box.create({title:req.body});
 
     return res.json(box);
 });
