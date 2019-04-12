@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post('/create',async(req,res)=>{
 
-    const box = await Box.create({title:req.body});
+    const box = await Box.create(req.body);
 
     return res.json(box);
 });
