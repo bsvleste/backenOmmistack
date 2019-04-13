@@ -10,8 +10,8 @@ router.post('/create',async(req,res)=>{
     return res.json(box);
 });
 
-router.get('/boxs',async(req,res)=>{
-    const lista = await Box.find().populate({
+router.get('/find/:id',async(req,res)=>{
+    const lista = await Box.findById(req.params.id).populate({
         path:'file',
         options:{sort:{createdAt:-1}}
     });
